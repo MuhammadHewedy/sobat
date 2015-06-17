@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Employee" table="employee" dynamic-update="true">
+        <id name="id" column="id" type="bigint" />         <!-- type takes java.sql.types members - case insenstive -->
+        <property name="name" type="varchar" column="name" />
+        
+        <!-- TODO 
+        <component name="" class="" >
+                <property name="" column="" type="" />
+                <property name="" column="" type="" />
+        </component>
+         -->
+</class>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+
+<!-- You can specify a DataSource (In Java EE env): -->
+<!--  
+        <datasource jndi="jdbc/test" >
+                <initial-context-factory>com.sun.jndi.rmi.registry.RegistryContextFactory</initial-context-factory>
+                <provider-url>rmi://localhost:1099</provider-url>
+        </datasource>
+-->
+
+<!--  Or use plain JDBC -->
+        <driver-manager>
+                <driver-class>com.mysql.jdbc.Driver</driver-class>
+                <connection-url>jdbc:mysql://localhost:3306/mahmood</connection-url>
+                <user-name>root</user-name>
+                <password>system</password>
+                <dialect>MySQLDialect</dialect>
+        </driver-manager>
+        
+        <class path="com/googlecode/sobat/examples/QuestionDetail.xml" />
+        <class path="com/googlecode/sobat/examples/Employee.xml" />
+</mapping>

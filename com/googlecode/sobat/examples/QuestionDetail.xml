@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="QuestionDetail" table="question_deatil" dynamic-update="true"> <!-- dynamic-update: default is true -->
+        <id name="id" column="id" type="bigint" />         <!-- type takes values from  java.sql.Types members - case insensitive -->
+        <property name="question" type="varchar" column="quest" />
+        <property name="correctAnswer" type="varchar" column="correctAns" />
+        <property name="AnswerA" type="varchar" column="QA" />
+        <property name="AnswerB" type="varchar" column="QB" />
+        <property name="AnswerC" type="varchar" column="QC" />
+        <property name="AnswerD" type="varchar" column="QD" />
+        <property name="image" type="varbinary" column="image" />
+</class>
